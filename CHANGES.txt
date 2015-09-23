@@ -1,1 +1,2 @@
 v0.1, 2015-09-23 -- Initial release.
+v0.2, 2015-09-24 -- Rename module to django_template_finder_view

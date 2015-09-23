@@ -29,7 +29,7 @@ Simply include `TemplateFinder` in a URL match in your `urls.py` file, passing t
 ``` python
 # [app]/urls.py
 
-from template_finder_view import TemplateFinder
+from django_template_finder_view import TemplateFinder
 
 ...
 
