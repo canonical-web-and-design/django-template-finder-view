@@ -10,10 +10,10 @@ except ImportError:
 
 setup(
     name='django-template-finder-view',
-    version='0.2',
+    version='0.3',
     url='',
     license='LGPLv3',
-    author='Robin',
+    author='Canonical Webteam',
     description='A view for automatically finding and rendering Django templates',
     packages=['django_template_finder_view'],
     include_package_data=True,
@@ -22,4 +22,3 @@ setup(
         "Django >= 1.3",
     ],
 )
-
