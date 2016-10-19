@@ -5,6 +5,7 @@ from os.path import join
 from django.template import loader, TemplateDoesNotExist
 from django.views.generic.base import TemplateView
 from django.http import Http404
+from django.conf import settings
 
 
 class TemplateFinder(TemplateView):
@@ -21,6 +22,10 @@ class TemplateFinder(TemplateView):
         """
 
         template_path = template_path.rstrip('/')
+
+        template_root = getattr(settings, 'TEMPLATE_FINDER_DIR', None)
+        if template_root:
+            template_path = join(template_root, template_path)
 
         index = join(template_path, 'index.html')
         template = join(template_path + '.html')

@@ -54,3 +54,25 @@ TEMPLATES = [
     }
 ]
 ```
+
+A custom folder to load the templates can be specified. This allows you to keep the URL acessible templates separately from template includes.
+
+``` python
+# As a subfolder in templates. Only searching inside `templates/pages/`
+TEMPLATE_FINDER_DIR = 'pages'
+```
+
+To specify an absolute directory outside templates, it must be added to the `DIRS` setting in `TEMPLATES`.
+``` python
+# Outside the templates folder
+TEMPLATE_FINDER_DIR = os.path.join(BASE_DIR, 'pages')
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [
+            os.path.join(BASE_DIR, 'templates'),
+            TEMPLATE_FINDER_DIR,
+        ],
+    }
+]
+```
