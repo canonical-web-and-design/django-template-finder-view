@@ -23,7 +23,7 @@ class TemplateFinder(TemplateView):
 
         template_path = template_path.rstrip('/')
 
-        template_root = getattr(settings, 'TEMPLATE_FINDER_DIR', None)
+        template_root = getattr(settings, 'TEMPLATE_FINDER_PATH', None)
         if template_root:
             template_path = join(template_root, template_path)
 
