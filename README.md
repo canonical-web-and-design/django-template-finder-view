@@ -1,8 +1,6 @@
-**NB:**
+**Archived**
 
-This project has been superseded by [canonicalwebteam.django-views](https://github.com/canonical-webteam/django-views), which contained an equivalent [TemplateFinder view class](https://github.com/canonical-webteam/django-views/blob/master/canonicalwebteam/django_views/__init__.py#L130). Projects shouldb upgrade to using that package instead.
-
-This project will now be archived.
+*This project has been superseded by [canonicalwebteam.django-views](https://github.com/canonical-webteam/django-views), which contained an equivalent [TemplateFinder view class](https://github.com/canonical-webteam/django-views/blob/master/canonicalwebteam/django_views/__init__.py#L130). Projects shouldb upgrade to using that package instead.*
 
 ---
 
